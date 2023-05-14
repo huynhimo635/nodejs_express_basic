@@ -1,0 +1,26 @@
+{
+  "name": "nodejs_express",
+  "version": "1.0.0",
+  "description": "Learning Nodejs Express Basic",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huynhimo635/nodejs_express_basic.git"
+  },
+  "author": "huynhimo635",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huynhimo635/nodejs_express_basic/issues"
+  },
+  "homepage": "https://github.com/huynhimo635/nodejs_express_basic#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
