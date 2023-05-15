@@ -7,6 +7,9 @@ const handlebars = require('express-handlebars')
 const app = express()
 const port = 3000
 
+// Static files
+app.use(express.static('./src/public'))
+
 // HTTP Logger
 app.use(morgan('dev'))
 
