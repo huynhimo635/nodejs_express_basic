@@ -1,20 +1,23 @@
 
 const express = require('express')
+const morgan = require('morgan')
+const handlebars = require('express-handlebars')
+
+
 const app = express()
 const port = 3000
 
-const morgan = require('morgan')
-
+// HTTP Logger
 app.use(morgan('dev'))
 
-app.get('/', (req, res) => res.send('Hello World'))
-app.get('/test1', (req, res) => {
-  var a = 1
-  var b = 2
+// Template Engine
+app.engine('hbs', handlebars.engine({
+  extname: 'hbs'
+}));
+app.set('view engine', 'hbs');
+app.set('views', './views');
 
-  var c = ++a + b++
 
-  return res.send('Hello Test1')
-})
+app.get('/', (req, res) => res.render('home'))
 
 app.listen(port, () => `Testing Listen port: ${port}`)
