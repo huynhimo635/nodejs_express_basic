@@ -15,9 +15,10 @@ app.engine('hbs', handlebars.engine({
   extname: 'hbs'
 }));
 app.set('view engine', 'hbs');
-app.set('views', './views');
+app.set('views', './src/resources/views');
 
 
 app.get('/', (req, res) => res.render('home'))
+app.get('/news', (req, res) => res.render('news'))
 
 app.listen(port, () => `Testing Listen port: ${port}`)

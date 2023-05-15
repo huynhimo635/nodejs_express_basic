@@ -2,9 +2,9 @@
   "name": "nodejs_express",
   "version": "1.0.0",
   "description": "Learning Nodejs Express Basic",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index",
+    "start": "nodemon --inspect src/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
